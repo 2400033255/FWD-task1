@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+        }
+
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #222;
+            color: white;
+            padding: 20px;
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        .sidebar a:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        .main {
+            margin-left: 240px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Settings</a>
+        <a href="#">Logs</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="main">
+        <h1>Welcome, Admin</h1>
+
+        <div class="card">
+            <h3>System Status</h3>
+            <p>Everything is running smoothly.</p>
+        </div>
+
+        <div class="card">
+            <h3>Recent Activity</h3>
+            <ul>
+                <li>User John created an account.</li>
+                <li>Admin updated system settings.</li>
+                <li>User Sarah logged in.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
